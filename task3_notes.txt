@@ -1,0 +1,11 @@
+1. Relationship Type:
+   Customers to Sales: One-to-Many (1:*) relationship using CustomerID.
+   Products to Sales: One-to-Many (1:*) relationship using Product (or ProdID).
+
+2. Total Sales Calculation:
+   Total Sales is calculated using SUMX(Sales, Sales[Quantity] * Sales[UnitPrice]) to sum row-by-row item totals across all transactions.
+
+3. Key Business Insights:
+   - Category Performance: Electronics and Accessories drive the highest total revenue.
+   - City Performance: Major revenue shares come from top cities like Lahore and Karachi.
+   - Monthly Trend: Sales remained steady across the evaluated timeframe.
